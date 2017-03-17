@@ -68,7 +68,7 @@ class AnonymouseMessageCore: NSManagedObject {
         }
         if likeStatus != 2 {
             if likeStatus == 1 {
-                self.rating = NSNumber(integerLiteral: self.rating!.intValue - 2)
+                self.rating = NSNumber(integerLiteral: self.rating!.intValue - 1) //originally -2
                 let sentRatingObject: AnonymouseRatingSentCore = AnonymouseRatingSentCore(rating: -2, messageHash: self.text!.sha1())
                 connectivityController.send(individualRating: sentRatingObject)
             } else {

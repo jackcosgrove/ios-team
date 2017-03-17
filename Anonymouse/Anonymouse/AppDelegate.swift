@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let defaultPreferencesFile: URL = Bundle.main.url(forResource: "DefaultPreferences", withExtension: "plist")!
         let defaultPreferencesDictionary: NSDictionary = NSDictionary(contentsOf: defaultPreferencesFile)!
         
+        Background().start()
         userPreferences.register(defaults: defaultPreferencesDictionary as! [String : Any])
         return true
     }
@@ -54,14 +55,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.backgroundTask = UIBackgroundTaskInvalid
         })
         
+}
+}
+        /*
+        func applicanBackground activity(_ application: UIApplication){
+            //self.backgroundTask = application.Background.swift
+            Background().start()
+ 
+        
         self.dataController.saveContext()
-        /*DispatchQueue.global(qos: DispatchQoS.QoSClass.utility).async {
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.utility).async {
          while !application.backgroundTimeRemaining.isLess(than: 0.0) {
          }
          
          application.endBackgroundTask(self.backgroundTask)
          self.backgroundTask = UIBackgroundTaskInvalid
-         }*/
+         }
+        
+        
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -94,4 +105,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
+ 
+ */
 

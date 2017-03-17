@@ -12,6 +12,8 @@
 		02F9C78A1DEDFCE800CA631D /* AnonymouseMessageCore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9C7861DEDFCE800CA631D /* AnonymouseMessageCore+CoreDataProperties.swift */; };
 		02F9C78B1DEDFCE800CA631D /* AnonymouseReplyCore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9C7871DEDFCE800CA631D /* AnonymouseReplyCore+CoreDataClass.swift */; };
 		02F9C78C1DEDFCE800CA631D /* AnonymouseReplyCore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9C7881DEDFCE800CA631D /* AnonymouseReplyCore+CoreDataProperties.swift */; };
+		087D645E1E76421000776BC9 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D645D1E76421000776BC9 /* Background.swift */; };
+		08B7DEF31E775AC700B4C188 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 08B7DEF21E775AC700B4C188 /* 3.wav */; };
 		172EA8A21D9788DA00D2E127 /* AnonymouseProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172EA8A11D9788DA00D2E127 /* AnonymouseProfileViewController.swift */; };
 		1A42E0311CBED2A100E6EE86 /* AnonymouseMessageCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A42E02F1CBED2A100E6EE86 /* AnonymouseMessageCore.swift */; };
 		1A5BA78E1D999FD1005000D5 /* AnonymouseSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BA78D1D999FD1005000D5 /* AnonymouseSettingsViewController.swift */; };
@@ -85,6 +87,8 @@
 		02F9C7861DEDFCE800CA631D /* AnonymouseMessageCore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnonymouseMessageCore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		02F9C7871DEDFCE800CA631D /* AnonymouseReplyCore+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnonymouseReplyCore+CoreDataClass.swift"; sourceTree = "<group>"; };
 		02F9C7881DEDFCE800CA631D /* AnonymouseReplyCore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnonymouseReplyCore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		087D645D1E76421000776BC9 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		08B7DEF21E775AC700B4C188 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
 		172EA8A11D9788DA00D2E127 /* AnonymouseProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnonymouseProfileViewController.swift; sourceTree = "<group>"; };
 		1A42E02F1CBED2A100E6EE86 /* AnonymouseMessageCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnonymouseMessageCore.swift; sourceTree = "<group>"; };
 		1A5BA78D1D999FD1005000D5 /* AnonymouseSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnonymouseSettingsViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				1ABE12D41C9744D0005923BA /* AppDelegate.swift */,
+				087D645D1E76421000776BC9 /* Background.swift */,
+				08B7DEF21E775AC700B4C188 /* 3.wav */,
 				1AD52A951D9964A9000F13DE /* AnonymouseNavigationStyleController.swift */,
 				1AFEDAE51D986BBC00690EB5 /* AnonymouseTabBarController.swift */,
 				1A932A521DB3CA7A004294A9 /* ViewControllers */,
@@ -254,6 +260,7 @@
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = SQXYK344KH;
 						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -308,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B7DEF31E775AC700B4C188 /* 3.wav in Resources */,
 				1ABE12E11C9744D0005923BA /* LaunchScreen.storyboard in Resources */,
 				1ABE12DE1C9744D0005923BA /* Assets.xcassets in Resources */,
 				1A9CE5A71DAFBEC8000AD6C0 /* DefaultPreferences.plist in Resources */,
@@ -329,6 +337,7 @@
 				1AFEDAE61D986BBC00690EB5 /* AnonymouseTabBarController.swift in Sources */,
 				02F9C78B1DEDFCE800CA631D /* AnonymouseReplyCore+CoreDataClass.swift in Sources */,
 				1A42E0311CBED2A100E6EE86 /* AnonymouseMessageCore.swift in Sources */,
+				087D645E1E76421000776BC9 /* Background.swift in Sources */,
 				1A932A591DB3D37A004294A9 /* AnonymouseDetailViewController.swift in Sources */,
 				1AF2D0671C97856300670C89 /* AnonymouseComposeViewController.swift in Sources */,
 				1ABE12D51C9744D0005923BA /* AppDelegate.swift in Sources */,
@@ -463,7 +472,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Harry Wang (H8KLZ6P85F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SQXYK344KH;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Anonymouse/Info.plist";
@@ -482,7 +492,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Harry Wang (H8KLZ6P85F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SQXYK344KH;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Anonymouse/Info.plist";
